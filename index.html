@@ -14,14 +14,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-large">
   <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-calendar-o w3-margin-right"></i>Home</a>
-  <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Locations</a>
+  <a href="#locations" class="w3-bar-item w3-button w3-mobile">Locations</a>
   <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
   <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
         <!--<input type="submit" value="Go to Login" class= "w3-bar-item w3-button w3-right w3-light-grey w3-mobile"> -->
         <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <style>
-                body {font-family: Arial, Helvetica, sans-serif;}
+                body {font-family: "Raleway" ,Arial, Helvetica, sans-serif;}
                 
                 /* Full-width input fields */
                 input[type=text], input[type=password] {
@@ -35,7 +35,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                 
                 /* Set a style for all buttons */
                 button {
-                  background-color: #4CAF50;
+                  background-color: rgba(4, 31, 182, 0.671);
                   color: white;
                   padding: 14px 20px;
                   margin: 8px 0;
@@ -155,7 +155,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                 </head>
                 <body>
                 
-                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class= "w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Sign In</button>
+                <button onclick="document.getElementById('id01').style.display='block'" style= "width:auto" class= "w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Sign In</button> 
                 
                 <div id="id01" class="modal">
                   
@@ -237,13 +237,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
             <form method="POST">
                 <select name="Locations">
                     <option value="Kingston">Kingston</option>
-                    <option value="Middlebrook">Middlebrook</option>
+                    <option value="Turkey Creek">Turkey Creek</option>
                     <option value="Downtown">Downtown</option>
                 </select>
             </form>
         </div>
-        
-        <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
+        <form action="Availability.html">
+            <button class="w3-button w3-dark-grey" type="input"><i class= "fa fa-search w3-margin-right"></i> Search Availability</button>
       </form>
     </div>
   </div>
@@ -271,9 +271,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
-      <img src="/w3images/room_double.jpg" alt="Norway" style="width:100%">
+      <img src="/w3images/room_double.jpg" alt="Turkey Creek Pic" style="width:100%">
       <div class="w3-container w3-white">
-        <h3>Middlebrook</h3>
+        <h3>Turkey Creek</h3>
         <h6 class="w3-opacity">(Name)</h6>
         <p>(Address)</p>
         <p>(Phone Number)</p>
