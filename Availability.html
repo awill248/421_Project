@@ -12,8 +12,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <body class="w3-light-grey">
 
 
-
-
     <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-large">
     <form action="index.html">
@@ -374,8 +372,31 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                   
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
-                          
-                        <button type="submit">Sign In</button>
+                         
+                        <input type="button" onclick="check(this.form)"value="Sign In"/>
+                        <script language="javascript">
+                          var myuserid="user";
+                          var mypswrd = "pass";
+                            function check(form)/*function to check userid & password*/
+                            {
+                             /*the following code checkes whether the entered userid and password are matching*/
+                             if(form.uname.value == "myuserid" && form.psw.value == "mypswrd")
+                              {
+                                window.open('Confirmation.html')/*opens the target page while Id & password matches*/
+                              }
+                             else
+                             {
+                               alert("Error Password or Username")/*displays error message*/
+                              }
+                            }
+</script>
+
+
+                        <!--<button type="submit">Sign In</button>
+                        <form action="Confirmation.html">
+                            <button class="w3-button" type="submit"> Sign In</button>
+                       </form> -->
+
                         <button type="button" class= "caabtn" >Create an Account </button>
                         <label>
                           <input type="checkbox" checked="checked" name="remember"> Remember me
