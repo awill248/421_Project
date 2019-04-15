@@ -33,16 +33,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                   box-sizing: border-box;
                 }
                 
-                /* Set a style for all buttons */
-                button {
-                  background-color: rgba(4, 31, 182, 0.671);
-                  color: white;
-                  padding: 14px 20px;
-                  margin: 8px 0;
-                  border: none;
-                  cursor: pointer;
-                  width: 100%;
-                }
+            
                 
                 button:hover {
                   opacity: 0.8;
@@ -57,7 +48,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                     cursor: pointer;
                     width: 100%;
                 }
-                    
+                .loginbtn {
+                background-color: rgb(49, 47, 218);
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            } 
                 /* Extra styles for the cancel button */
                 .cancelbtn {
                   width: auto;
@@ -155,7 +154,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                 </head>
                 <body>
                 
-                <button onclick="document.getElementById('id01').style.display='block'" style= "width:auto" class= "w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Sign In</button> 
+                <button onclick="document.getElementById('id01').style.display='block'" style= "width:auto" class= "w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Make An Appointment</button> 
                 
                 <div id="id01" class="modal">
                   
@@ -166,13 +165,30 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                     </div>
                 
                     <div class="container">
-                      <label for="uname"><b>Username</b></label>
-                      <input type="text" placeholder="Enter Username" name="uname" required>
-                
-                      <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
+                            <script>
+                                    function Login(form) { username = new Array("username"); password = new Array("password"); page = "Preferences.html"; 
+                  
+                                    if (form.username.value == username[0] && form.password.value == password[0] || form.username.value == username[1] && form.password.value == password[1] ||
+                  
+                                    form.username.value == username[2] && form.password.value == password[2] || form.username.value == username[3] && form.password.value == password[3] ||
+                  
+                                    form.username.value == username[4] && form.password.value == password[4] || form.username.value == username[5] && form.password.value == password[5] ||
+                  
+                                    form.username.value == username[6] && form.password.value == password[6] || form.username.value == username[7] && form.password.value == password[7] ||
+                  
+                                    form.username.value == username[8] && form.password.value == password[8] || form.username.value == username[9] && form.password.value == password[9]) { self.location.href = page; } 
+                                    else { alert("Either the username or password you entered is incorrect.\nPlease try again."); form.username.focus(); } return true; }
+                                  </script>
+            
+                              <label for="username" name="username"><b>Username</b></label>
+                              <input type="text" name="username" placeholder="Enter Username" name="uname" required>
                         
-                      <button type="submit">Sign In</button>
+                              <label for="password" name="password"><b>Password</b></label>
+                              <input type="password" name= "password" placeholder="Enter Password" name="psw" required>
+                                
+                              <!--<button type="submit"  onClick="Login(this.form);">Sign In</button>-->
+                              <input type="button" class="loginbtn" value="Login" onClick="Login(this.form);">
+            
                       <button type="button" class= "caabtn" >Create an Account </button>
                       <label>
                         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -215,7 +231,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <!-- Header -->
 <header class="w3-display-container w3-content" style="max-width:1500px;">
     <img src="UTMed.png" alt="The Medical Center" style="min-width:1000px" width="1500" height="800">
-  <div class="w3-display-left w3-padding w3-col l6 m8">
+ <!-- <div class="w3-display-left w3-padding w3-col l6 m8">
     <div class="w3-container w3-red">
       <h2><i class="fa fa-calendar-o w3-margin-right"></i>VAC Medical</h2>
     </div>
@@ -246,8 +262,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
             <button class="u w3-dark-grey" type="input"><i class= "fa fa-search w3-margin-right"></i> Search Availability</button>
       </form>
     </div>
-  </div>
+  </div>-->
 </header>
+
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:1532px;">
