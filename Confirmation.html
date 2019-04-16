@@ -32,6 +32,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                   <form action="/action_page.php" target="_blank">
                     <div class="w3-row-padding" style="margin:0 -16px;">
                       <div class="w3-margin-bottom w3-center">
+                          <h3> Patient Name </h3>
                             <h4>(Location)</h4>
                             <h4>(Time)</h4>
                             <h4>(Date)</h4>
@@ -97,13 +98,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <div class="w3-container">
         <h2>Symptoms</h2>
         <p>If you would rather fill this information out in person, please leave the boxes empty.</p>
-          <h6>Weight</h6>
-          <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Weight" required name="Weight"></p>
-          <h6>Height</h6>
-          <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Height" required name="Height"></p>
-          <h6>Temperature</h6>
-          <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Temperature" required name="Temperature"></p>
-          <p><button class="w3-button w3-black w3-padding-large" type="submit">Submit</button></p>
+          <h6>Approximate Start Date of Symptoms</h6>
+          <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="MM DD YYYY" required name="Start Date of Symptom"></p>
+          <h6>Description of Symptoms</h6>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Description of Symptom" required name="Description of Symptom"></p>
+          <h6>Upload Picture (Optional)</h6>
+
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            </form>
+            <div class="w3-row-padding w3-padding-16"></div>
+
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                </form>
+<div class="w3-row-padding w3-padding-16"></div>
+          <!--<p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Temperature" required name="Temperature"></p>-->
+          <form action="index.html">
+                <button class="w3-button w3-black w3-padding-large" type="input">Submit</button> 
+             </form> 
+         <!-- <p><button class="w3-button w3-black w3-padding-large" type="submit">Submit</button></p>-->
 </div>
 
 <div class="w3-row-padding w3-padding-16"></div>
