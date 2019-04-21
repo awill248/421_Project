@@ -165,7 +165,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                 
                 <div id="id01" class="modal">
                   
-                  <form class="modal-content animate" action="/action_page.php">
+                  <form class="modal-content animate" >
                     <div class="imgcontainer">
                       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                       <img src="Logo.jpeg" alt="Logo" class="avatar">
@@ -198,9 +198,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
             
                      <!-- <button type="button" class= "caabtn" >Create an Account </button>-->
 
-                      <form action="CreateAccount.html">
-                            <button class="caabtn" type="input">Create an Account</button> 
-                      </form>
+                      <!-- <form action="CreateAccount.html"> -->
+                            <button class="caabtn" onclick="window.location.href='CreateAccount.html'">My Create an Account</button> 
+                            <!-- <a href="CreateAccount.html">My Create an Account</a> -->
+                      <!-- </form> -->
 
                       <label>
                         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -271,7 +272,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     </div>
 
     <div class="w3-third w3-margin-bottom">
-      <img src="BlountMemorial.jpg" alt="Maryville Pic" style="width:100%" width="500" height="350">
+      <img src="BlountMemorial.jpg" alt="Maryville Pic" style="width:100%"  height="350">
       <div class="w3-container w3-white">
         <h3>Maryville Branch</h3>
         <h6 class="w3-opacity">Blount Memorial Hospital</h6>
@@ -286,7 +287,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     </div>
 
     <div class="w3-third w3-margin-bottom">
-      <img src="TurkeyCreekpic.jpg" alt="Farragut Pic" style="width:100%" width="500" height="350">
+      <img src="TurkeyCreekpic.jpg" alt="Farragut Pic" style="width:100%" height="350">
       <div class="w3-container w3-white">
         <h3>Farragut Branch</h3>
         <h6 class="w3-opacity">Turkey Creek Medical Center</h6>
@@ -333,7 +334,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                     <img src="pic1.jpg" alt="John" style="width:100%" height="325">
                     <div class="w3-container">
                         <div class="caption">
-                            <h3>Jonh Kobza</h3>
+                            <h3>Dr. John Kobza</h3>
                             
                                 <p>Position: Physician</p>
                                 <p>Branch: Alcoa</p>
@@ -350,7 +351,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                     <img src="pic2.jpg" alt="Jane" style="width:100%" height="325">
                     <div class="w3-container">
                         <div class="caption">
-                            <h3>Xueping Li</h3>
+                            <h3>Dr. Xueping Li</h3>
                             
                                 <p>Position: Physician</p>
                                 <p>Branch: Maryville</p>
@@ -367,7 +368,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                     <img src="pic3.jpg" alt="Mike" style="width:100%" height="325">
                     <div class="w3-container">
                         <div class="caption">
-                            <h3>HwangBo Hoon</h3>
+                            <h3>Dr. HwangBo Hoon</h3>
                             
                                 <p>Position: Physician</p>
                                 <p>Branch: Farragut</p>
@@ -384,7 +385,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
                     <img src="pic4.jpg" alt="Dan" style="width:100%" height="325">
                     <div class="w3-container">
                         <div class="caption">
-                            <h3>Laura O’Shaughnessy</h3>
+                            <h3>Laura O’Shaughnessy, R.N.</h3>
                             
                                 <p>Position: Nurse Practitioner</p>
                                 <p>Branch: Farragut</p>
@@ -432,12 +433,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <footer class="w3-padding-32 w3-red w3-center w3-margin-top">
   <h5>Find Us On</h5>
   <div class="w3-xlarge w3-padding-8">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a class="w3-button fa fa-facebook-official w3-hover-opacity" href="http://www.facebook.com/"></a>
+    <a class="w3-button fa fa-twitter w3-hover-opacity" href="https://www.twitter.com/"></a>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
