@@ -19,7 +19,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     </div>
 
 
-
     <header class="w3-display-container w3-content" style="max-width:1500px;">
         <img src="UTMed.png" alt="The Medical Center" style="width:100%" height="800">
 <div class="w3-display-left w3-padding w3-col l6 m8">
@@ -29,31 +28,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <div class="w3-container w3-white w3-padding-16">
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px;">
-          <div class="w3-half w3-margin-bottom">
-            <label><i class="fa fa-calendar-o"></i> Desired Appointment Date</label>
-            <input class="w3-input w3-border" type="date" placeholder="MM DD YYYY" required name="Date">
-          </div>
-          <div class="w3-half">
-            <label><i class="fa fa-calendar-o"></i> Desired Appointment Time</label>
-            <input class="w3-input w3-border" type="time" placeholder="HH:MM" required name="Time">
-          </div>
+          
+            <h1><i class="fa fa-check" style="font-size:72px;color:green"></i> Appointment Confirmed</h1>
+            <h5> An appointment confirmation will be sent to the email linked to this account.</h5>
+          
         </div>
-        <input type="checkbox" name="immediate" value="As soon as possible"> As soon as possible<br>
 
-
-        <div class="w3-row-padding" style="margin:8px -16px;">
-            <label><i class="fa fa-male"></i> Location</label>
-            <form method="POST">
-                <select name="Locations">
-                    <option value="Alcoa">Alcoa </option>
-                    <option value="Farragut">Farragut</option>
-                    <option value="Maryville">Maryville</option>
-                </select>
-            </form>
-        </div>
-        <form action="Availability.html">
-            <button class="w3-dark-grey" style="width:100%" type="input"><i class= "fa fa-search w3-margin-right"></i> Search Availability</button>
-      </form>
     </div>
   </div>
 </header>
