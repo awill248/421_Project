@@ -9,7 +9,6 @@
 //   `subject` VARCHAR(45) NULL,
 //   `message` VARCHAR(45) NULL,
 //   PRIMARY KEY (`id`)); -->
-
 $app->get('/api/contact', function ($request, $response, $args) {  //GET example
     $pdo =$this->pdo;
     $selectStatement = $pdo->select()
@@ -22,7 +21,6 @@ $app->get('/api/contact', function ($request, $response, $args) {  //GET example
 	$pdo = null;
 	return $response;
 });
-// demo of insert
 $app->post('/api/contact', function ($request, $response, $args) { //POST example
  	$pdo =$this->pdo;
 	$params = $request->getParsedBody();
@@ -34,26 +32,9 @@ $app->post('/api/contact', function ($request, $response, $args) { //POST exampl
 								->into('contact')
 								->values(array($name, $email, $subject, $message));
     $insert =  $insertStatement->execute();
-	$res['insert'] = $insert; // id of the record
 	$res['status'] = 'success';
 	$response->write(json_encode($res));
 	$pdo = null;
 	return $response;
-});
-// demo of delete
-$app->post('/api/delete_contact', function ($request, $response, $args) { //POST example
-	$pdo =$this->pdo;
-   $params = $request->getParsedBody();
-   $id = $params['id'];
-   $deleteStatement = $pdo->delete()
-						->from('contact')
-						->where('id', '=', $id);
-   $delete =  $deleteStatement->execute();
-   $res['delete'] = $delete; // no of rows affected
-   $res['status'] = 'success';
-   $response->write(json_encode($res));
-   
-   $pdo = null;
-   return $response;
 });
 ?>
