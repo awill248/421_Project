@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html>
-<title>Create An Account</title>
+    <head>
+<title>Login</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
 <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    body, h1, h2, h3, h4, h5, h6 {
         font-family: "Raleway", Arial, Helvetica, sans-serif
     }
-
     input {
         background-color: gray;
         border: grey;
         color: white;
-
     }
-
     .empty {
         background-color: "w3-light-grey";
         border: "w3-light-grey";
         color: "w3-light-grey";
     }
+    .caabtn {
+      background-color: grey;
+      color: white;
+      padding: 5px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      text-align:center;
+    }
+
+    .avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+    
 </style>
 
 <body class="w3-light-grey">
-
-
     <!-- Navigation Bar -->
     <div class="w3-bar w3-white w3-large">
         <form action="index.html">
@@ -62,8 +75,12 @@
         </form> -->
 
 
+        
+            <img src="/Frontend/images/Logo.jpeg" alt="Logo" class="avatar" style="text-align: center">
+          
+
         <div class="container" id="app"> <!--XP ADDED-->
-            <h2>Login form</h2>
+            <h2>Login to Your Account</h2>
             <form>
               <div class="form-group">
                 <label for="email">Email:</label>
@@ -78,25 +95,21 @@
                   <input class="form-check-input" type="checkbox" name="remember"> Remember me
                 </label>
               </div>
-              <button @click.prevent="login()" type="submit" class="btn btn-primary">Login</button>
+              <button @click.prevent="login ()" type="submit" class="btn btn-primary">Login</button>
             </form>
             <div><p class="text-warning">{{msg}}</p></div>
           </div>
-
-        <button class="caabtn" onclick="window.location.href='CreateAccount.html'">Create an Account</button>
-
+<div style="text-align:center">
+        <button class="caabtn" style="text-align:center" onclick="window.location.href='CreateAccount.html'">Create an Account</button>
+</div>
   <!-- Scripts -->
   <!-- development version, includes helpful console warnings -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="assets/js/my.js"></script>
+  
+  <script src="assets/js/login.js"></script>        
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+ 
 
         </body>
         </html>
