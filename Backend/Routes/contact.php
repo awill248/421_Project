@@ -1,4 +1,3 @@
-
 <?php
 // <!-- CREATE TABLE `rzhou7`.`contact` (
 //   `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
@@ -9,6 +8,7 @@
 //   `subject` VARCHAR(45) NULL,
 //   `message` VARCHAR(45) NULL,
 //   PRIMARY KEY (`id`)); -->
+
 $app->get('/api/contact', function ($request, $response, $args) {  //GET example
     $pdo =$this->pdo;
     $selectStatement = $pdo->select()
