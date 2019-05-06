@@ -6,243 +6,26 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Raleway", Arial, Helvetica, sans-serif;
+    }
 
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
 
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-
-</style>
-
-<body class="w3-light-grey">
-
-<!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-calendar-o w3-margin-right"></i>Home</a>
-  <a href="#locations" class="w3-bar-item w3-button w3-mobile">Locations</a>
-  <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
-  <a href="#doctors" class="w3-bar-item w3-button w3-mobile">Our Doctors</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
-        <!--<input type="submit" value="Go to Login" class= "w3-bar-item w3-button w3-right w3-light-grey w3-mobile"> -->
-        <head>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <style>
-                body {font-family: "Raleway" ,Arial, Helvetica, sans-serif;}
-                
-                /* Full-width input fields */
-                input[type=text], input[type=password] {
-                  width: 100%;
-                  padding: 12px 20px;
-                  margin: 8px 0;
-                  display: inline-block;
-                  border: 1px solid #ccc;
-                  box-sizing: border-box;
-                }
-                
-            
-                
-                button:hover {
-                  opacity: 0.8;
-                }
-                
-                .caabtn {
-                    background-color: grey;
-                    color: white;
-                    padding: 5px 20px;
-                    margin: 8px 0;
-                    border: none;
-                    cursor: pointer;
-                    width: 100%;
-                }
-                .loginbtn {
-                background-color: rgb(49, 47, 218);
-                color: white;
-                padding: 14px 20px;
-                margin: 8px 0;
-                border: none;
-                cursor: pointer;
-                width: 100%;
-            } 
-                /* Extra styles for the cancel button */
-                .cancelbtn {
-                  width: auto;
-                  padding: 10px 18px;
-                  background-color: #f44336;
-                }
-                
-                /* Center the image and position the close button */
-                .imgcontainer {
-                  text-align: center;
-                  margin: 24px 0 12px 0;
-                  position: relative;
-                }
-                
-                img.avatar {
-                  width: 30%;
-                  border-radius: 50%;
-                }
-                
-                .container {
-                  padding: 16px;
-                }
-                
-                span.psw {
-                  float: right;
-                  padding-top: 16px;
-                }
-                
-                /* The Modal (background) */
-                .modal {
-                  display: none; /* Hidden by default */
-                  position: fixed; /* Stay in place */
-                  z-index: 1; /* Sit on top */
-                  left: 0;
-                  top: 0;
-                  width: 100%; /* Full width */
-                  height: 100%; /* Full height */
-                  overflow: auto; /* Enable scroll if needed */
-                  background-color: rgb(0,0,0); /* Fallback color */
-                  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                  padding-top: 60px;
-                }
-                
-                /* Modal Content/Box */
-                .modal-content {
-                  background-color: #fefefe;
-                  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-                  border: 1px solid #888;
-                  width: 80%; /* Could be more or less, depending on screen size */
-                }
-                
-                /* The Close Button (x) */
-                .close {
-                  position: absolute;
-                  right: 25px;
-                  top: 0;
-                  color: #000;
-                  font-size: 35px;
-                  font-weight: bold;
-                }
-                
-                .close:hover,
-                .close:focus {
-                  color: red;
-                  cursor: pointer;
-                }
-                
-                /* Add Zoom Animation */
-                .animate {
-                  -webkit-animation: animatezoom 0.6s;
-                  animation: animatezoom 0.6s
-                }
-                
-                @-webkit-keyframes animatezoom {
-                  from {-webkit-transform: scale(0)} 
-                  to {-webkit-transform: scale(1)}
-                }
-                  
-                @keyframes animatezoom {
-                  from {transform: scale(0)} 
-                  to {transform: scale(1)}
-                }
-                
-                /* Change styles for span and cancel button on extra small screens */
-                @media screen and (max-width: 300px) {
-                  span.psw {
-                     display: block;
-                     float: none;
-                  }
-                  .cancelbtn {
-                     width: 100%;
-                  }
-                }
-                </style>
-                </head>
-                <body>
-                
-                <button onclick="document.getElementById('id01').style.display='block'" style= "width:auto" class= "w3-bar-item w3-button w3-right w3-red w3-mobile">Make An Appointment</button> 
-                
-                <div id="id01" class="modal">
-                  
-                  <form class="modal-content animate" >
-                    <div class="imgcontainer">
-                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                      <img src="Images/Logo.jpeg" alt="Logo" class="avatar">
-                    </div>
-                
-                    <div class="container">
-                            <script>
-                                    function Login(form) { username = new Array("username"); password = new Array("password"); page = "Preferences.html"; 
-                  
-                                    if (form.username.value == username[0] && form.password.value == password[0] || form.username.value == username[1] && form.password.value == password[1] ||
-                  
-                                    form.username.value == username[2] && form.password.value == password[2] || form.username.value == username[3] && form.password.value == password[3] ||
-                  
-                                    form.username.value == username[4] && form.password.value == password[4] || form.username.value == username[5] && form.password.value == password[5] ||
-                  
-                                    form.username.value == username[6] && form.password.value == password[6] || form.username.value == username[7] && form.password.value == password[7] ||
-                  
-                                    form.username.value == username[8] && form.password.value == password[8] || form.username.value == username[9] && form.password.value == password[9]) { self.location.href = page; } 
-                                    else { alert("Either the username or password you entered is incorrect.\nPlease try again."); form.username.focus(); } return true; }
-                                  </script>
-            
-                              <label for="username" name="username"><b>Username</b></label>
-                              <input type="text" name="username" placeholder="Enter Username" name="uname" required>
-                        
-                              <label for="password" name="password"><b>Password</b></label>
-                              <input type="password" name= "password" placeholder="Enter Password" name="psw" required>
-                                
-                              <!--<button type="submit"  onClick="Login(this.form);">Sign In</button>-->
-                              <input type="button" class="loginbtn" value="Login" onClick="Login(this.form);">
-            
-                     <!-- <button type="button" class= "caabtn" >Create an Account </button>-->
-
-                      <!-- <form action="CreateAccount.html"> -->
-                            <button class="caabtn" onclick="window.location.href='CreateAccount.html'">Create an Account</button> 
-                            <!-- <a href="CreateAccount.html">My Create an Account</a> -->
-                      <!-- </form> -->
-
-                      <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                      </label>
-                      
-                    </div>
-                
-                    <div class="container" style="background-color:#f1f1f1">
-                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                      <span class="psw"><a href="#">Forget password?</a></span>
-                    </div>
-                  </form>
-                </div>
-                
-                <script>
-                // Get the modal
-                var modal = document.getElementById('id01');
-                
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-                </script>
-                
-                </body>  
-
-                
-  
-  <!--<form action="login.html">
-        <input type="submit" value="Go to Login" class= "w3-bar-item w3-button w3-right w3-light-grey w3-mobile">
-       </form>
-   <a href="#contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Log In</a> -->
-
-  
-  <!--BACK TO TOP BUTTON-->
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    
     #myBtn {
       display: none;
       position: fixed;
@@ -257,38 +40,317 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       padding: 15px;
       border-radius: 4px;
     }
-    
+
     #myBtn:hover {
       background-color: #555;
     }
-    </style>
-    </head>
-    <body>
-    
-    <button onclick="topFunction()" id="myBtn" title="Go to top" class="w3-red"><i class="fa fa-arrow-circle-up"></i> Back to the Top</button>
-    
-    <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        document.getElementById("myBtn").style.display = "none";
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .caabtn {
+      background-color: grey;
+      color: white;
+      padding: 5px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .loginbtn {
+      background-color: rgb(49, 47, 218);
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+
+    img.avatar {
+      width: 30%;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
       }
     }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
-    
-    </body>
 
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+
+
+
+<body class="w3-light-grey">
+
+  <!-- Navigation Bar -->
+  <div class="w3-bar w3-white w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-calendar-o w3-margin-right"></i>Home</a>
+    <a href="#locations" class="w3-bar-item w3-button w3-mobile">Locations</a>
+    <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
+    <a href="#doctors" class="w3-bar-item w3-button w3-mobile">Our Doctors</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+    <!--<input type="submit" value="Go to Login" class= "w3-bar-item w3-button w3-right w3-light-grey w3-mobile"> -->
+
+    <form action="login.html">
+      <button class="w3-bar-item w3-button w3-right w3-red w3-mobile">Make an Appointment</button>
+  </form>
+
+
+
+    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto"
+      class="w3-bar-item w3-button w3-right w3-red w3-mobile">Make An Appointment</button>
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+          <img src="Images/Logo.jpeg" alt="Logo" class="avatar">
+        </div>
+        
+        <div class="container" id="app">
+          <!-- <script>
+            function Login(form) {
+              username = new Array("username"); password = new Array("password"); page = "Preferences.html";
+
+              if (form.username.value == username[0] && form.password.value == password[0] || form.username.value == username[1] && form.password.value == password[1] ||
+
+                form.username.value == username[2] && form.password.value == password[2] || form.username.value == username[3] && form.password.value == password[3] ||
+
+                form.username.value == username[4] && form.password.value == password[4] || form.username.value == username[5] && form.password.value == password[5] ||
+
+                form.username.value == username[6] && form.password.value == password[6] || form.username.value == username[7] && form.password.value == password[7] ||
+
+                form.username.value == username[8] && form.password.value == password[8] || form.username.value == username[9] && form.password.value == password[9]) { self.location.href = page; }
+              else { alert("Either the username or password you entered is incorrect.\nPlease try again."); form.username.focus(); } return true;
+            }
+          </script> -->
+<!-- <form>
+          <label for="email" name="email"><b>Email</b></label>
+          <input v-model="email" type="email" name="email" placeholder="Enter Email" name="uname" required>
+
+          <label for="password" name="password"><b>Password</b></label>
+          <input v-model="password" type="password" name="password" placeholder="Enter Password" name="psw" required>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+          </div>
+          <button @click.prevent="login()" type="submit" class="btn btn-primary">Login</button>
+        </form> -->
+
+
+
+          <!--<button type="submit"  onClick="Login(this.form);">Sign In</button>-->
+
+          <!-- <input type="button" class="loginbtn" value="Login" onClick="Login(this.form);"> -->
+
+          <!-- <button type="button" class= "caabtn" >Create an Account </button>-->
+
+          <!-- <form action="CreateAccount.html"> -->
+          <!-- <button class="caabtn" onclick="window.location.href='CreateAccount.html'">Create an Account</button> -->
+          <!-- <a href="CreateAccount.html">My Create an Account</a> -->
+          <!-- </form> -->
+
+          <!-- <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label> -->
 <!--
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#">Forget password?</a></span>
+        </div>
+      </form>
+    </div> -->
+
+    <!-- <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script> -->
+
+
+
+
+
+    <!--<form action="login.html">
+        <input type="submit" value="Go to Login" class= "w3-bar-item w3-button w3-right w3-light-grey w3-mobile">
+       </form>
+   <a href="#contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Log In</a> -->
+
+
+    <!--BACK TO TOP BUTTON-->
+
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          font-size: 18px;
+          border: black;
+          outline: none;
+          color: white;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 4px;
+        }
+
+        #myBtn:hover {
+          background-color: #555;
+        }
+      </style>
+    </head>
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="w3-red"><i class="fa fa-arrow-circle-up"></i>
+      Back to the Top</button>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+
+
+    <!--
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
@@ -489,288 +551,267 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       
       </body> 
     -->
-</div>
-<!-- Header -->
-<header class="w3-display-container w3-content" style="max-width:1500px;">
-    <img src="Images/MainPic.png" alt="The Medical Center" style="width:100%" height="800">
-</header>
-
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1532px;">
-
-  <div class="w3-container w3-margin-top" id="locations">
-    <h1>Locations</h1>
   </div>
-  
+  <!-- Header -->
+  <header class="w3-display-container w3-content" style="max-width:1500px;">
+    <img src="Images/MainPic.png" alt="The Medical Center" style="width:100%" height="800">
+  </header>
 
-  <div class="w3-row-padding w3-padding-16">
-    <div class="w3-third w3-margin-bottom">
-      <img src="Images/UTMed.png" alt="Alcoa Pic" style="width:100%" width="500" height="350">
-      <div class="w3-container w3-white">
-        <h3>Alcoa Branch</h3>
-        <h6 class="w3-opacity">University of Tennessee Medical Center</h6>
-        <p>1924 Alcoa Hwy, Knoxville, TN 37920</p>
-        <p>(865) 305-9000</p>
-        <p>M-F 9am-5pm <br>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1532px;">
+
+    <div class="w3-container w3-margin-top" id="locations">
+      <h1>Locations</h1>
+    </div>
+
+
+    <div class="w3-row-padding w3-padding-16">
+      <div class="w3-third w3-margin-bottom">
+        <img src="Images/UTMed.png" alt="Alcoa Pic" style="width:100%" width="500" height="350">
+        <div class="w3-container w3-white">
+          <h3>Alcoa Branch</h3>
+          <h6 class="w3-opacity">University of Tennessee Medical Center</h6>
+          <p>1924 Alcoa Hwy, Knoxville, TN 37920</p>
+          <p>(865) 305-9000</p>
+          <p>M-F 9am-5pm <br>
             Sat 9am-12pm<br>
             Sun 9am-12pm
-        </p>
-        <p class="w3-large"> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+          </p>
+          <p class="w3-large"> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        </div>
       </div>
-    </div>
 
-    <div class="w3-third w3-margin-bottom">
-      <img src="Images/BlountMemorial.jpg" alt="Maryville Pic" style="width:100%"  height="350">
-      <div class="w3-container w3-white">
-        <h3>Maryville Branch</h3>
-        <h6 class="w3-opacity">Blount Memorial Hospital</h6>
-        <p>907 E Lamar Alexander Pkwy, Maryville, TN 37804</p>
-        <p>(865) 983-7211</p>
-        <p>M-F 9am-5pm <br>
+      <div class="w3-third w3-margin-bottom">
+        <img src="Images/BlountMemorial.jpg" alt="Maryville Pic" style="width:100%" height="350">
+        <div class="w3-container w3-white">
+          <h3>Maryville Branch</h3>
+          <h6 class="w3-opacity">Blount Memorial Hospital</h6>
+          <p>907 E Lamar Alexander Pkwy, Maryville, TN 37804</p>
+          <p>(865) 983-7211</p>
+          <p>M-F 9am-5pm <br>
             Sat 9am-12pm<br>
             Sun CLOSED
-        </p>
-        <p class="w3-large"> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+          </p>
+          <p class="w3-large"> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        </div>
       </div>
-    </div>
 
-    <div class="w3-third w3-margin-bottom">
-      <img src="Images/TurkeyCreekpic.jpg" alt="Farragut Pic" style="width:100%" height="350">
-      <div class="w3-container w3-white">
-        <h3>Farragut Branch</h3>
-        <h6 class="w3-opacity">Turkey Creek Medical Center</h6>
-        <p>10820 Parkside Dr, Knoxville, TN 37934</p>
-        <p>(865) 218-7011</p>
-        <p>M-F 9am-5pm <br>
+      <div class="w3-third w3-margin-bottom">
+        <img src="Images/TurkeyCreekpic.jpg" alt="Farragut Pic" style="width:100%" height="350">
+        <div class="w3-container w3-white">
+          <h3>Farragut Branch</h3>
+          <h6 class="w3-opacity">Turkey Creek Medical Center</h6>
+          <p>10820 Parkside Dr, Knoxville, TN 37934</p>
+          <p>(865) 218-7011</p>
+          <p>M-F 9am-5pm <br>
             Sat 9am-12pm<br>
             Sun CLOSED</p>
-        <p class="w3-large"><i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+          <p class="w3-large"><i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="w3-row-padding" id="about">
-    <div class="w3-col l6 s6">
-            <div class="w3-row-padding w3-padding-16"></div>
-            <div class="w3-row-padding w3-padding-16"></div>
+    <div class="w3-row-padding" id="about">
+      <div class="w3-col l6 s6">
+        <div class="w3-row-padding w3-padding-16"></div>
+        <div class="w3-row-padding w3-padding-16"></div>
         <h1>About</h1>
-      <h6>VAC is a clinic accompanying the medical needs of local hospitals, including University of Tennessee Medical Center, Blount Memorial Hospital and Turkey Creek Medical Center. Our goal at VAC is to provide immediate care for patients at their convenience. With our technology of scheduling online appointments with your medical needs beforehand, the capability to refer back to past appointments, and the ability to have access to your medical history makes our clinic different from our competitors.</h6>
-    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+        <h6>VAC is a clinic accompanying the medical needs of local hospitals, including University of Tennessee Medical
+          Center, Blount Memorial Hospital and Turkey Creek Medical Center. Our goal at VAC is to provide immediate care
+          for patients at their convenience. With our technology of scheduling online appointments with your medical
+          needs beforehand, the capability to refer back to past appointments, and the ability to have access to your
+          medical history makes our clinic different from our competitors.</h6>
+        <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i
+            class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i
+            class="fa fa-cc-paypal w3-large"></i></p>
+      </div>
+      <div class="w3-col l6 s6 w3-center">
+
+        <!-- Image of location/map -->
+        <img src="Images/LocationsMap.png" class="w3-image" style="width:65%;">
+      </div>
     </div>
-    <div class="w3-col l6 s6 w3-center">
+    <div class="w3-row-padding w3-padding-16"></div>
 
-      <!-- Image of location/map -->
-      <img src="Images/LocationsMap.png" class="w3-image" style="width:65%;">
+
+    <div class="w3-panel w3-red w3-leftbar w3-padding-32">
+      <h2><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> Changing the Way You Receive Healthcare
+      </h2>
     </div>
-  </div>
-  <div class="w3-row-padding w3-padding-16"></div>
 
+    <div class="w3-container" id="doctors">
+      <h1>Our Doctors</h1>
+    </div>
 
-  <div class="w3-panel w3-red w3-leftbar w3-padding-32">
-    <h2><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> Changing the Way You Receive Healthcare</h2>
-  </div>
+    <div class="w3-row-padding w3-padding-16 w3-text-black w3-large"></div>
 
-  <div class="w3-container" id="doctors">
-    <h1>Our Doctors</h1>
-  </div>
+    <div class="w3-row-padding " style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="Images/pic1.jpg" alt="John" style="width:100%" height="325">
+          <div class="w3-container">
+            <div class="caption">
+              <h3>Dr. John Kobza</h3>
 
-  <div class="w3-row-padding w3-padding-16 w3-text-black w3-large"></div>
-        
-        <div class="w3-row-padding " style="margin-top:64px">
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                  <div class="w3-card">
-                    <img src="Images/pic1.jpg" alt="John" style="width:100%" height="325">
-                    <div class="w3-container">
-                        <div class="caption">
-                            <h3>Dr. John Kobza</h3>
-                            
-                                <p>Position: Physician</p>
-                                <p>Branch: Alcoa</p>
-                                <p>Education: Clemson Univeristy</p>
-                                <p>Service: 5 years </p>
-                            
-                          </div>
-                    </div>
-                  </div>
-                </div>
-            
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                  <div class="w3-card">
-                    <img src="Images/HarryMartin.jpg" alt="Lee" style="width:100%" height="325">
-                    <div class="w3-container">
-                        <div class="caption">
-                            <h3>Dr. Lee Martin</h3>
-                            
-                                <p>Position: Physician</p>
-                                <p>Branch: Maryville</p>
-                                <p>Education: Arizona State University</p>
-                                <p>Service: 10 years </p>
-                            
-                          </div>
-                    </div>
-                  </div>
-                </div>
-            
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                  <div class="w3-card">
-                    <img src="Images/pic3.jpg" alt="Hoon" style="width:100%" height="325">
-                    <div class="w3-container">
-                        <div class="caption">
-                            <h3>Dr. HwangBo Hoon</h3>
-                            
-                                <p>Position: Physician</p>
-                                <p>Branch: Farragut</p>
-                                <p>Education: Texas A&M University</p>
-                                <p>Service: 3 years </p>
-                          
-                          </div>
-                    </div>
-                  </div>
-                </div>
-            
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                  <div class="w3-card">
-                    <img src="Images/pic4.jpg" alt="Laura" style="width:100%" height="325">
-                    <div class="w3-container">
-                        <div class="caption">
-                            <h3>Laura O’Shaughnessy, R.N.</h3>
-                            
-                                <p>Position: Nurse Practitioner</p>
-                                <p>Branch: Farragut</p>
-                                <p>Education: University of Tennessee</p>
-                                <p>Service: 3 years </p>
-                          
-                          </div>
-                    </div>
-                  </div>
-                </div>
-            
-              
+              <p>Position: Physician</p>
+              <p>Branch: Alcoa</p>
+              <p>Education: Clemson Univeristy</p>
+              <p>Service: 5 years </p>
+
             </div>
-                        
-        
-                    
-                    
-        
-<div class="w3-row-padding w3-padding-16"></div>   
+          </div>
+        </div>
+      </div>
 
-<div class="w3-container" id="contact">
-  <div id="app">
-    <h2>Contact</h2>
-    <p>If you have any questions regarding appointments, submit them below.</p>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="Images/HarryMartin.jpg" alt="Lee" style="width:100%" height="325">
+          <div class="w3-container">
+            <div class="caption">
+              <h3>Dr. Lee Martin</h3>
+
+              <p>Position: Physician</p>
+              <p>Branch: Maryville</p>
+              <p>Education: Arizona State University</p>
+              <p>Service: 10 years </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="Images/pic3.jpg" alt="Hoon" style="width:100%" height="325">
+          <div class="w3-container">
+            <div class="caption">
+              <h3>Dr. HwangBo Hoon</h3>
+
+              <p>Position: Physician</p>
+              <p>Branch: Farragut</p>
+              <p>Education: Texas A&M University</p>
+              <p>Service: 3 years </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="Images/pic4.jpg" alt="Laura" style="width:100%" height="325">
+          <div class="w3-container">
+            <div class="caption">
+              <h3>Laura O’Shaughnessy, R.N.</h3>
+
+              <p>Position: Nurse Practitioner</p>
+              <p>Branch: Farragut</p>
+              <p>Education: University of Tennessee</p>
+              <p>Service: 3 years </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="w3-row-padding w3-padding-16"></div>
+
+    <div class="w3-container" id="contact">
+      <div id="app">
+        <h2>Contact</h2>
+        <p>If you have any questions regarding appointments, submit them below.</p>
         <!--<form action="" target="_blank">-->
-          <form>
-            <!--<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <form>
+          <!--<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
             <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
             <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>-->
 
-            <input v-model="name" class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-            <input v-model="email" class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-            <input v-model="subject" class="form-control" id="subject" name="subject" placeholder="Subject" type="text" required>
-            <textarea v-model="message" class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+          <input v-model="name" class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input v-model="email" class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <input v-model="subject" class="form-control" id="subject" name="subject" placeholder="Subject" type="text"
+            required>
+          <textarea v-model="message" class="form-control" id="comments" name="comments" placeholder="Comment"
+            rows="5"></textarea><br>
+          <div class="col-12">
+            <p>{{status}}</p>
+          </div>
+          <button class="btn btn-default pull-left" @click.prevent="submitFeedback()">Submit</button>
 
-            <button class="btn btn-default pull-right" @click.prevent="submitData()">Submit</button>
-            
-            <!--<p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>-->
+          <!--<p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>-->
         </form>
-</div>  
-</div>      
-           
-  
-<div class="w3-row-padding w3-padding-16"></div>
-  <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
-    <h2>Join our newsletter!</h2>
-    <label>E-mail</label>
-    <input class="w3-input w3-border" type="text" placeholder="Your Email address">
-    <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+      </div>
+    </div>
+
+
+    <div class="w3-row-padding w3-padding-16"></div>
+    <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
+      <h2>Join our newsletter!</h2>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+    </div>
+
+
+    <!-- End page content -->
   </div>
 
+  <!-- Footer -->
+  <footer class="w3-padding-32 w3-red w3-center w3-margin-top">
+    <h5>Find Us On</h5>
+    <div class="w3-xlarge w3-padding-8">
+      <a class="w3-button fa fa-facebook-official w3-hover-opacity" href="http://www.facebook.com/"></a>
+      <a class="w3-button fa fa-twitter w3-hover-opacity" href="https://www.twitter.com/"></a>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+        class="w3-hover-text-green">w3.css</a></p>
+  </footer>
 
-<!-- End page content -->
-</div>
+  <!-- Add Google Maps -->
+  <script>
+    function myMap() {
+      myCenter = new google.maps.LatLng(41.878114, -87.629798);
+      var mapOptions = {
+        center: myCenter,
+        zoom: 12, scrollwheel: false, draggable: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
 
-<!-- Footer -->
-<footer class="w3-padding-32 w3-red w3-center w3-margin-top">
-  <h5>Find Us On</h5>
-  <div class="w3-xlarge w3-padding-8">
-    <a class="w3-button fa fa-facebook-official w3-hover-opacity" href="http://www.facebook.com/"></a>
-    <a class="w3-button fa fa-twitter w3-hover-opacity" href="https://www.twitter.com/"></a>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-<!-- Add Google Maps -->
-<script>
-function myMap() {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
+      var marker = new google.maps.Marker({
+        position: myCenter,
+      });
+      marker.setMap(map);
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
+  </script>
+  <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- Scripts -->
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script>
-    new Vue({
-      el: '#app',
-      data() {
-        return {
-          msg: 'Hello world!',
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-          status: ''
-        }
-      },
-      mounted() {
-      },
-      methods: {
-        submitData() {
-          axios
-            .post('http://localhost:8080/api/contact', { name: this.name, email: this.email, subject: this.subject, message: this.message })
-            .then(response => (
-              this.msg = response.data.status,
-              (this.msg == 'success') ? this.status = 'Submitted! Thanks.' : 'Oops!'
-            )
-            )
-            .catch(function (error) {
-              console.log(error);
-            })
-        }
-      }
-    })
-  </script>
+  <script src="assets/js/my.js"></script>
 
-	<!-- Scripts -->
-	<!-- development version, includes helpful console warnings -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="assets/js/my.js"></script>
-
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  
+
 </body>
+
 </html>

@@ -2,10 +2,11 @@ new Vue({
     el: '#app',
     data() {
         return {
-            msg: 'Howdy!',
+            msg: '',
             name: '',
-            address: '',
-            phone: '',
+            email: '',
+            subject: '',
+            message: '',
             status: ''
         }
     },
@@ -13,17 +14,17 @@ new Vue({
     mounted() {        
     },
     methods: {
-        submitData () {
+        submitFeedback () {
             console.log("working here")
             // axios
             //     .get('https://api.coindesk.com/v1/bpi/currentprice.json')
             //     .then(response => (this.message = response.data.chartName))
             
             axios
-                .post('http://localhost:5500/api/company', {name: this.name, address: this.address, phone: this.phone})
+                .post('http://localhost:5500/api/contact', {name: this.name, email: this.email, subject: this.subject, message: this.message})
                 .then(response => (
                     this.msg = response.data.status,
-                    (this.msg == 'success') ? this.status = 'Added! Thanks.' : 'Ooops!'                                     
+                    (this.msg == 'success') ? this.status = 'Submitted! Thanks.' : 'errors!'                                     
                     )                    
                 )             
                 // .then(() => ((this.msg == 'success')?this.status = 'Submitted! Thanks.':''))

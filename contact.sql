@@ -11,3 +11,4 @@ CREATE TABLE contact (
 `subject` VARCHAR(45) NULL,
 `message` VARCHAR(45) NULL,
 PRIMARY KEY (`id`));
+
