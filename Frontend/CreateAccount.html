@@ -51,39 +51,25 @@
         <div style="text-align: center">
             <h6>Email</h6>
 
-            <p><input v-model="email" class="w3-padding-16 w3-border" style="width:50%" type="email" placeholder="Email"
-                    required name="Email"> </p>
+            <p><input v-model="email" class="w3-padding-16 w3-border" style="width:50%" type="email" placeholder="Email" name="Email" required> </p>
 
 
             <h6>Password</h6>
             <p><input v-model="password" class="w3-padding-16 w3-border" style="width:50%" type="password"
-                    placeholder="Password" required name="Password"> </p>
+                    placeholder="Password" required name="Password" required> </p>
 
-            <!-- <h6>Re-enter Password</h6>
-        <p><input class=" w3-padding-16 w3-border" style="width:50%" type="password" placeholder="Re-enter Password"
-                required name="Re-enter Password"> </p> -->
 
             <div class="w3-row-padding w3-padding-16"></div>
         </div>
-        <button @click.prevent="submitAccount ()" type="submit" class="btn btn-primary">Create Account</button>
+        <button @click.prevent="submitAccount ()" type="submit" class="w3-button w3-black w3-padding-large">Create Account</button>
         </form>
         <div>
             <p class="text-warning">{{msg}}</p>
         </div>
     </div>
-    <!-- <form action="medhistory.html">
-        <button class="w3-bar-item w3-button w3-black w3-mobile" type="input">Create Account</button>
-    </form> -->
     </div>
 
-
-
-    <!--<p><button class="w3-button w3-black w3-padding-large" type="submit">Next</button></p>-->
-
     <div class="w3-row-padding w3-padding-16"></div>
-
-
-
 
     <footer class="w3-padding-32 w3-red w3-center w3-margin-top">
         <h5>Find Us On</h5>

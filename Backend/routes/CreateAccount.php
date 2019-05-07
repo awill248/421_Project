@@ -1,7 +1,7 @@
 <?php
 
 
-$app->post('/api/users', function ($request, $response, $args) { //POST example
+$app->post('/api/CreateAccount', function ($request, $response, $args) { //POST example
  	$pdo =$this->pdo;
 	$params = $request->getParsedBody();
 	$email = $params['email'];
